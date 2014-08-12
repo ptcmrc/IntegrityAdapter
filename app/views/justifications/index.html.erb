@@ -1,0 +1,33 @@
+<h1>Listing justifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Justid</th>
+      <th>Repo</th>
+      <th>Branch</th>
+      <th>Approved</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @justifications.each do |justification| %>
+      <tr>
+        <td><%= justification.justId %></td>
+        <td><%= justification.repo %></td>
+        <td><%= justification.branch %></td>
+        <td><%= justification.approved %></td>
+        <td><%= link_to 'Show', justification %></td>
+        <td><%= link_to 'Edit', edit_justification_path(justification) %></td>
+        <td><%= link_to 'Destroy', justification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Justification', new_justification_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Justid:</strong>
+  <%= @justification.justId %>
+</p>
+
+<p>
+  <strong>Repo:</strong>
+  <%= @justification.repo %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @justification.branch %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @justification.approved %>
+</p>
+
+<%= link_to 'Edit', edit_justification_path(@justification) %> |
+<%= link_to 'Back', justifications_path %>

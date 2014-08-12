@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  justId: 1
+  repo: MyString
+  branch: MyString
+  approved: false
+
+two:
+  justId: 1
+  repo: MyString
+  branch: MyString
+  approved: false
